@@ -81,3 +81,6 @@ Recommended settings to erode a dungeon to a cave use a Neighbour height of 0, h
 7. Add objects in the object-tab.
 8. Add Paths
 9. Export using the “Export” Button
+
+## Credits
+Uses Standalone Filebrowser (https://github.com/gkngkc/UnityStandaloneFileBrowser) and the Grid Outline from Forgotten Adventures (https://www.forgotten-adventures.net)
