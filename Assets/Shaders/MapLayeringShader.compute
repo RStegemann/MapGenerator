@@ -1,0 +1,21 @@
+// Each #kernel tells which function to compile; you can have many kernels
+#pragma kernel CSMain
+
+// Create a RenderTexture with enableRandomWrite flag and set it
+// with cs.SetTexture
+RWTexture2D<float4> Result;
+
+Texture2D Grid;
+Texture2D Object;
+Texture2D Ground;
+
+[numthreads(8,8,1)]
+void CSMain (uint3 id : SV_DispatchThreadID)
+{
+    // TODO: insert actual code here!
+    float3 color = Ground[id.xy].xyz;
+    color = lerp(color, Object[id.xy].xyz, Object[id.xy].www);
+    color = lerp(color, Grid[id.xy].xyz, Grid[id.xy].www);
+    
+    Result[id.xy] = float4(color.xyz, 1);
+}

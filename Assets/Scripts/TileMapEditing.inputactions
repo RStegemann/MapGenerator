@@ -1,0 +1,52 @@
+{
+    "name": "TileMapEditing",
+    "maps": [
+        {
+            "name": "Mouse",
+            "id": "57aa8ff9-4145-477e-94a4-58a8abd938e3",
+            "actions": [
+                {
+                    "name": "Position",
+                    "type": "Value",
+                    "id": "10d0f139-63b7-47d4-9b11-bb2dec365547",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "LeftButton",
+                    "type": "Button",
+                    "id": "36a016a9-d9cd-4f4e-b127-a5de39dfc6fc",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "a7821738-70d6-4105-bbd5-efdb40e95c77",
+                    "path": "<Pointer>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Position",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "155224ea-1cca-46f6-b130-68c3d284096f",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeftButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
