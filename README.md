@@ -43,7 +43,9 @@ Similarly to the terrain menu a click on “Add” opens the filebrowser to impo
  - Remove: Deletes the path
  - Placing Points: Sets the path as “active” to allow placing waypoints with leftclick.
  - Traversable Height: Two values between 0 and 1 to configure the minimum(left) and maximum(right) height the path can traverse. Useful to avoid seas or mountains while generating the path.
- - Width: Width of the path in fields. Will generate a path of width 1 first, then extend it based on traversable height settings, which can lead to choke points.
+ - Width: Width of the path in fields. Will generate a path of width 1 first, then extend it based on traversable height settings, which can lead to choke points.    • 
+ - Optimal Height: Value between Min and Max traversable Height, which should be favoured when calculating the path.
+ - Height Weight: Weight to use for the optimal Height vs shortest path calculation.
  - Point list: Displays coordinates of all points and allows removal of specific waypoints.
 
 # Algorithm Settings
